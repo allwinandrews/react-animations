@@ -10,12 +10,26 @@
   top: 30%;
   left: 25%;
   width: 50%;
+  transition: all 0.3s ease-out;
 }
 
-.ModalOpen {
+/* .ModalOpen {
   display: block;
+  opacity: 1;
 }
 
 .ModalClosed {
   display: none;
+  opacity: 0;
+} */
+
+.ModalOpen {
+  /* display: block or none will block transitions */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ModalClosed {
+  opacity: 0;
+  transform: translateY(-100vh);
 }
